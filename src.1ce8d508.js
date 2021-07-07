@@ -117,7 +117,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"SvwL":[function(require,module,exports) {
+})({"iMte":[function(require,module,exports) {
+
+},{}],"SvwL":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19396,6 +19398,8 @@ var global = arguments[3];
 },{}],"Focm":[function(require,module,exports) {
 "use strict";
 
+require("./style.css");
+
 var _fetchCountries = _interopRequireDefault(require("./fetchCountries.js"));
 
 var _lodash = require("lodash");
@@ -19410,6 +19414,11 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import "@pnotify/core/dist/PNotify.css";
+// import "@pnotify/core/dist/BrightTheme.css";
+// import "@pnotify/mobile/dist/PNotifyMobile.css";
+// import "@pnotify/countdown/dist/PNotifyCountdown.css";
+// import { alert } from '@pnotify/core';
 _PNotify.defaultModules.set(PNotifyMobile, {});
 
 var refs = {
@@ -19434,7 +19443,7 @@ var search = function search() {
 
     if (list.length === 0) {
       (0, _PNotify.alert)({
-        title: "Too many matches.",
+        title: "No matches found.",
         text: "Please enter more specific query!",
         type: 'error',
         delay: 3000,
@@ -19496,5 +19505,5 @@ var search = function search() {
 };
 
 refs.input.addEventListener('input', (0, _lodash.debounce)(search, 500));
-},{"./fetchCountries.js":"SvwL","lodash":"B1iE","../node_modules/@pnotify/core/dist/PNotify.js":"txz9","../node_modules/@pnotify/mobile/dist/PNotifyMobile.js":"ad6a"}]},{},["Focm"], null)
-//# sourceMappingURL=/-goit-js-hw-12-countries/src.6d53fe43.js.map
+},{"./style.css":"iMte","./fetchCountries.js":"SvwL","lodash":"B1iE","../node_modules/@pnotify/core/dist/PNotify.js":"txz9","../node_modules/@pnotify/mobile/dist/PNotifyMobile.js":"ad6a"}]},{},["Focm"], null)
+//# sourceMappingURL=/-goit-js-hw-12-countries/src.1ce8d508.js.map
