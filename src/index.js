@@ -1,7 +1,14 @@
+// import "@pnotify/core/dist/PNotify.css";
+// import "@pnotify/core/dist/BrightTheme.css";
+// import "@pnotify/mobile/dist/PNotifyMobile.css";
+// import "@pnotify/countdown/dist/PNotifyCountdown.css";
+// import { alert } from '@pnotify/core';
+import './style.css';
+
 import fetchCountries from './fetchCountries.js';
 import { debounce } from 'lodash';
-import { alert, defaultModules } from '../node_modules/@pnotify/core/dist/PNotify.js';
-import * as PNotifyMobile from '../node_modules/@pnotify/mobile/dist/PNotifyMobile.js';
+import { alert, defaultModules } from './@pnotify/core/dist/PNotify.js';
+import * as PNotifyMobile from './@pnotify/mobile/dist/PNotifyMobile.js';
 defaultModules.set(PNotifyMobile, {});
 
 const refs = {
@@ -26,7 +33,7 @@ const search = () => {
         console.log(list)
         if (list.length === 0) {
              alert({
-              title: "Too many matches.",
+              title: "No matches found.",
               text: "Please enter more specific query!",
               type: 'error',
               delay: 3000,
@@ -84,4 +91,4 @@ const search = () => {
 
 }
 
-refs.input.addEventListener('input', debounce(search, 500))
+refs.input.addEventListener('input', debounce(search, 500));
