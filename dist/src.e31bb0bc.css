@@ -2,6 +2,7 @@ body {
     font-family: 'Indie Flower', cursive;
     background-color: cadetblue;
     font-size: 2rem;
+    letter-spacing: 0.2rem;
 }
 
 li {
@@ -9,6 +10,10 @@ li {
 }
 img {
     display: block;
+}
+b {
+    margin-right: 1rem;
+    
 }
 .wrap {
     display: flex;
@@ -39,4 +44,4 @@ min-width: 30%;
 
 
 
-/*# sourceMappingURL=/-goit-js-hw-12-countries/src.ce2996a9.css.map */
+/*# sourceMappingURL=/src.e31bb0bc.css.map */

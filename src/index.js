@@ -7,8 +7,8 @@ import './style.css';
 
 import fetchCountries from './fetchCountries.js';
 import { debounce } from 'lodash';
-import { alert, defaultModules } from './@pnotify/core/dist/PNotify.js';
-import * as PNotifyMobile from './@pnotify/mobile/dist/PNotifyMobile.js';
+import { alert, defaultModules } from '../node_modules/@pnotify/core/dist/PNotify.js';
+import * as PNotifyMobile from '../node_modules/@pnotify/mobile/dist/PNotifyMobile.js';
 defaultModules.set(PNotifyMobile, {});
 
 const refs = {
